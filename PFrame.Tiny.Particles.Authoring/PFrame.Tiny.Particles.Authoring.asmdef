@@ -1,0 +1,23 @@
+{
+    "name": "PFrame.Tiny.Particles.Authoring",
+    "references": [
+        "Unity.Entities",
+        "Unity.Transforms",
+        "Unity.Tiny.Rendering",
+        "Unity.Entities.Hybrid",
+        "Unity.Rendering.Hybrid",
+        "Unity.Mathematics",
+        "Unity.Tiny.Core",
+        "PFrame.Tiny.Interpolation",
+        "PFrame.Tiny.Particles"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

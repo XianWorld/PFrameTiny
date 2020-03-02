@@ -1,0 +1,24 @@
+{
+    "name": "PFrame.Tiny.Authoring",
+    "references": [
+        "Unity.Entities",
+        "Unity.Mathematics",
+        "Unity.Transforms",
+        "Unity.Collections",
+        "Unity.Tiny.Core",
+        "Unity.Tiny.Input",
+        "PFrame.Tiny",
+        "Unity.Entities.Hybrid",
+        "Unity.Rendering.Hybrid",
+        "PFrame.Entities"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
