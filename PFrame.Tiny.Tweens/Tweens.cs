@@ -7,7 +7,6 @@ using Unity.Tiny.Assertions;
 
 namespace PFrame.Tiny.Tweens
 {
-
     /// <summary>
     ///  Enum that lists tweening functions that you can pass to <see cref="TweenSystem.AddTween"/>.
     /// </summary>
