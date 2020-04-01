@@ -7,6 +7,33 @@ using Unity.Tiny.Assertions;
 
 namespace PFrame.Tiny.Tweens
 {
+    public enum PrimitiveFieldTypes
+    {
+        Bool = 0,
+        Byte = 1,
+        SByte = 2,
+        Double = 3,
+        Float = 4,
+        Int = 5,
+        UInt = 6,
+        Long = 7,
+        Ulong = 8,
+        Short = 9,
+        UShort = 10,
+        Quaternion = 11,
+        Float2 = 12,
+        Float3 = 13,
+        Float4 = 14,
+        Color = 15
+    }
+
+    public struct FieldInfo
+    {
+        public int componentTypeIndex;
+        public PrimitiveFieldTypes primitiveType;
+        public int byteOffsetInComponent;
+    }
+
     /// <summary>
     ///  Enum that lists tweening functions that you can pass to <see cref="TweenSystem.AddTween"/>.
     /// </summary>
@@ -225,6 +252,11 @@ namespace PFrame.Tiny.Tweens
     [UpdateInGroup(typeof(SimulationSystemGroup))]
     public class TweenSystem : ComponentSystem
     {
+        public static FieldInfo GetFieldArgs(int arg0, int arg1, int arg2)
+        {
+            return new FieldInfo() { componentTypeIndex = arg0, primitiveType = (PrimitiveFieldTypes)arg1, byteOffsetInComponent = arg2 };
+        }
+
         // ------------------------------------------------ tween functions -------------------------------------------------
         private static float OutBounce(float t)
         {
@@ -568,7 +600,7 @@ namespace PFrame.Tiny.Tweens
         /// <typeparam name="T">Type of the variable to tween.</typeparam>
         /// <returns></returns>
         public Entity AddTween<T>(Entity target,
-            TypeManager.FieldInfo info,
+            FieldInfo info,
             T startValue,
             T endValue,
             float duration,
@@ -587,7 +619,6 @@ namespace PFrame.Tiny.Tweens
             desc.loop = loop;
             return AddTweenInternal(target, startValue, endValue, desc, info.primitiveType);
         }
-
 
         protected override void OnUpdate()
         {

@@ -15,13 +15,8 @@
     "canvas"
   ],
   "dependencies": {
-    "com.unity.entities": "0.5.1-preview.11",
-    "com.unity.dots.runtime": "0.2.0-preview.3",
-    "com.unity.tiny": "0.21.0-preview.3",
-    "com.unity.tiny.desktop": "0.21.0-preview.3",
-    "com.unity.tiny.rendering": "0.21.0-preview.4",
-    "com.unity.tiny.web": "0.21.0-preview.3",
-	"com.pangaeavr.entities": "0.0.1-preview.1"
+    "com.unity.tiny.all": "0.22.0-preview.2",
+    "com.pangaeavr.entities": "0.0.1-preview.1"
   },
 	"repository": {
 	"type": "git",

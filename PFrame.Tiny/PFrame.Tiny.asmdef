@@ -3,11 +3,14 @@
     "references": [
         "Unity.Entities",
         "Unity.Mathematics",
+        "Unity.Mathematics.Extensions",
         "Unity.Transforms",
         "Unity.Collections",
         "Unity.Tiny.Core",
         "Unity.Tiny.Input",
         "Unity.Tiny.Rendering",
+        "Unity.Tiny.RendererExtras",
+        "Unity.Tiny.Rendering.Native",
         "PFrame.Entities"
     ],
     "includePlatforms": [],

@@ -13,9 +13,9 @@ namespace PFrame.Tiny
     {
         public static int GetButtonDown(InputSystem input)
         {
-            for(int i = 0;i<3; i++)
+            for (int i = 0; i < 3; i++)
             {
-                if(GetButtonDown(input, i))
+                if (GetButtonDown(input, i))
                 {
                     return i;
                 }
@@ -107,7 +107,7 @@ namespace PFrame.Tiny
 #else
             if (Input.touchSupported && Input.touchCount > 0)
             {
-                if(button == 0)
+                if (button == 0)
                 {
                     var touch = Input.GetTouch(0);
                     if (touch.phase == TouchPhase.Ended)

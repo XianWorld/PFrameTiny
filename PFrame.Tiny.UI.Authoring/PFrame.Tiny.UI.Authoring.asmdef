@@ -1,5 +1,5 @@
 {
-    "name": "PFrame.Tiny.Authoring",
+    "name": "PFrame.Tiny.UI.Authoring",
     "references": [
         "Unity.Entities",
         "Unity.Mathematics",
@@ -9,12 +9,11 @@
         "Unity.Tiny.Input",
         "Unity.Entities.Hybrid",
         "Unity.Rendering.Hybrid",
-        "Unity.Build",
-        "Unity.Entities.Runtime.Build",
         "PFrame.Entities",
         "PFrame.Entities.Authoring",
         "PFrame.Tiny",
-        "PFrame.Tiny.Hybrid"
+        "PFrame.Tiny.Authoring",
+        "PFrame.Tiny.UI"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

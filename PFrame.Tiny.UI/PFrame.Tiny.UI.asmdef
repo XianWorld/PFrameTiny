@@ -1,5 +1,5 @@
 {
-    "name": "PFrame.Tiny.Authoring",
+    "name": "PFrame.Tiny.UI",
     "references": [
         "Unity.Entities",
         "Unity.Mathematics",
@@ -7,18 +7,14 @@
         "Unity.Collections",
         "Unity.Tiny.Core",
         "Unity.Tiny.Input",
-        "Unity.Entities.Hybrid",
-        "Unity.Rendering.Hybrid",
-        "Unity.Build",
-        "Unity.Entities.Runtime.Build",
+        "Unity.Tiny.Rendering",
         "PFrame.Entities",
-        "PFrame.Entities.Authoring",
         "PFrame.Tiny",
-        "PFrame.Tiny.Hybrid"
+        "PFrame.Tiny.Tweens"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
-    "allowUnsafeCode": false,
+    "allowUnsafeCode": true,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
